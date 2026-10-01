@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Secrets / config locale
+.env
+*.pem
+*.key
+
+# Editeurs / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Vraies copies d'etudiants : ne JAMAIS les versionner
+scans/
+private/
