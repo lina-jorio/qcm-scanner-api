@@ -112,4 +112,4 @@ Contrats détaillés : [`docs/API_QCM.md`](docs/API_QCM.md), [`docs/API_CONTRAT_
 
 ## Licence
 
-À définir par l'auteur.
+Distribué sous licence MIT. Voir le fichier [LICENSE](LICENSE).
