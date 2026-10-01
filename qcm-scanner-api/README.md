@@ -5,7 +5,7 @@ API de correction automatique de QCM : elle reçoit la **photo ou le scan d'une 
 Elle repose sur du traitement d'image (OpenCV), deux modèles de deep learning (TensorFlow/Keras) et de l'OCR (EasyOCR), le tout exposé via une API FastAPI.
 
 <p align="center">
-  <img src="examples/example_sheet_anonymized.jpg" alt="Exemple de feuille QCM (anonymisée)" width="380">
+  <img src="examples/QCM_Template.jpg" alt="Template de feuille QCM " width="380">
 </p>
 
 ## Comment ça marche
