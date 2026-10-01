@@ -20,7 +20,7 @@ Elle repose sur du traitement d'image (OpenCV), deux modèles de deep learning (
 Les deux modèles du projet ont été entraînés de zéro, sur des données que collectées, annotées et nettoyées.
 
 ### Données
-- Dataset de **+40 000 cases** annotées manuellement (cochée / non cochée), issues de 166 feuilles scannées ou photographiées dans des conditions variées
+- Dataset de **+40 000 cases** annotées manuellement (cochée / non cochée), issues de 166 feuilles photographiées dans des conditions variées
 - Lien Kaggle du dataset crée des cases réponses QCM  : https://www.kaggle.com/datasets/linajorio/qcm-case
 - Deux jeux distincts : cases de réponses QCM et cases de la grille du numéro étudiant
 
