@@ -15,6 +15,26 @@ Elle repose sur du traitement d'image (OpenCV), deux modèles de deep learning (
 3. **Numéro étudiant** : les cases de la grille de chiffres sont classées par un second CNN (`qcm_model_id_augmente.h5`), puis regroupées par colonne pour reconstituer le numéro.
 4. **Nom / prénom** : la zone d'identité est recadrée, nettoyée (binarisation, suppression des lignes) et lue avec EasyOCR.
 
+## Entraînement des modèles 
+
+Les deux modèles du projet ont été entraînés de zéro, sur des données que collectées, annotées et nettoyées.
+
+### Données
+- Dataset de **+40 000 cases** annotées manuellement (cochée / non cochée), issues de 166 feuilles scannées ou photographiées dans des conditions variées
+- Lien Kaggle du dataset crée des cases réponses QCM  : https://www.kaggle.com/datasets/linajorio/qcm-case
+- Deux jeux distincts : cases de réponses QCM et cases de la grille du numéro étudiant
+
+### Préparation
+- Découpage automatique des cases avec OpenCV (détection des repères, redressement, recadrage)
+- Redimensionnement en 64×64 et normalisation des pixels
+- Nettoyage : [erreurs d'annotation corrigées, doublons retirés, classes rééquilibrées…]
+- Data augmentation (modèle du numéro étudiant) : [rotation, luminosité, bruit…]
+
+### Modèles
+- CNN binaires entraînés avec TensorFlow / Keras, sans modèle pré-entraîné
+- Accuracy : 100%
+
+
 ## Structure du projet
 
 ```
